@@ -595,7 +595,7 @@ li {
   left: -10px;
   width: 40%;
   height: 40%;
-  background: url('../cuadricula.png') no-repeat center center / cover;
+  background: url('./cuadricula.png') no-repeat center center / cover;
   z-index: -1;
   filter: grayscale(1);
 }
@@ -792,7 +792,7 @@ li {
     left: -10px;
     width: 40%;
     height: 40%;
-    background: url('../cuadricula.png') no-repeat center center / cover;
+    background: url('./cuadricula.png') no-repeat center center / cover;
     z-index: -1;
     filter: grayscale(1);
   }
