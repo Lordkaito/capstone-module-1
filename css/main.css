@@ -831,6 +831,7 @@ li {
 
   .about-heading {
     text-align: center;
+    position: relative;
   }
 
   .hr-about-deskt {
