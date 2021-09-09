@@ -772,7 +772,7 @@ li {
   .speaker {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
   }
 
@@ -808,7 +808,7 @@ li {
     height: 2px;
     background-color: var(--color-tertiary);
     position: absolute;
-    top: calc(0% + 3.5rem);
+    top: calc(0% + 3rem);
     left: 0;
   }
 
