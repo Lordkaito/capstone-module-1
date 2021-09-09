@@ -1,0 +1,32 @@
+{
+  "name": "concert-template",
+  "version": "1.0.0",
+  "description": "<!-- <a href='https://www.freepik.es/fotos/musica'>Foto de Música creado por bedneyimages - www.freepik.es</a> -->\r   <!-- <a href='https://www.freepik.es/fotos/musica'>Foto de Música creado por pvproductions - www.freepik.es</a> -->\r   <!-- Photo by <a href=\"https://unsplash.com/@ramjetnz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Roger Harris</a> on <a href=\"https://unsplash.com/s/photos/concert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a> -->\r   <!-- Photo by <a href=\"https://unsplash.com/@_jnknz_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Jana Kunz</a> on <a href=\"https://unsplash.com/s/photos/rock-concert?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText\">Unsplash</a> -->\r   <!-- Foto de Mantas Hesthaven en Pexels\r   Foto de Andrea Piacado en Pexels -->\r   <!-- <a href='https://www.freepik.es/fotos/negocios'>Foto de Negocios creado por Racool_studio - www.freepik.es</a> -->\r   <!-- <a href='https://www.freepik.es/fotos/negocios'>Foto de Negocios creado por Racool_studio - www.freepik.es</a> -->\r   <!-- <a href='https://www.freepik.es/fotos/negocios'>Foto de Negocios creado por Racool_studio - www.freepik.es</a> -->\r   <!-- Foto de ThisIsEngineering en Pexels\r   Foto de ICSA en Pexels -->\r   <!-- Navbar fixed to the top -->\r   <!-- Foto de Steve Johnson en Pexels -->",
+  "main": "index.js",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "hint": "^6.1.4",
+    "postcss": "^8.3.6",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.20.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lordkaito/capstone-module-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lordkaito/capstone-module-1/issues"
+  },
+  "homepage": "https://github.com/Lordkaito/capstone-module-1#readme"
+}
