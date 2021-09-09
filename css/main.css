@@ -15,6 +15,16 @@
 
 body {
   min-height: 100vh;
+  position: relative;
+}
+
+/* .close {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(90deg);
+} */
+
+.no-scroll {
+  overflow: hidden;
 }
 
 a {
@@ -23,6 +33,14 @@ a {
 
 li {
   list-style: none;
+}
+
+.mobile-hide {
+  display: none;
+}
+
+.social-login {
+  display: none;
 }
 
 #menu {
@@ -35,6 +53,19 @@ li {
   position: absolute;
   top: 1rem;
   left: 1rem;
+}
+
+.fa-times {
+  font-size: 1.5rem;
+  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--white-color);
+}
+
+.nav-items {
+  
 }
 
 #showcase {
@@ -56,14 +87,15 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .8;
+  opacity: .9;
 }
 
+#main-container {
+  z-index: 1;
+}
 
 .heading {
-  /* background-color: rgba(211, 211, 211, .7); */
   margin: 1rem 0;
-  z-index: 1;
 }
 
 .presentation {
@@ -74,7 +106,7 @@ li {
 .title {
   font-size: 2rem;
   font-weight: 900;
-  background: url('../images/pexels-suvan-chowdhury-144428.webp') no-repeat center center;
+  background: url('../images/pexels-steve-johnson-1962555.webp') no-repeat center center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
@@ -101,6 +133,7 @@ li {
   border: 1px solid var(--white-color);
   margin-top: .7rem;
   width: 100%;
+  color: gray;
 }
 
 .date-text {
@@ -247,11 +280,11 @@ li {
 #about-legal {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem 1rem;
-  border-bottom: 1px solid var(--color-primary);
+  border-bottom: 1px solid var(--color-tertiary);
 }
 
 .about-logo-legal {
@@ -259,7 +292,7 @@ li {
   margin-bottom: 1rem;
 }
 
-.about {
+.about-hr {
   width: 40px;
   height: 2px;
   background-color: var(--color-secondary);
@@ -276,6 +309,472 @@ li {
 
 .logo-about img {
   width: 100%;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-tertiary);
   height: 150px;
+  object-fit: cover;
+}
+
+#past-concerts {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.past-concert-title {
+  position: relative;
+}
+
+.past-concerts-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(100% + .3rem);
+}
+
+.past-concert-description {
+  padding: 1rem;
+  text-align: center;
+}
+
+.past-concerts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.past-concerts-item {
+  max-width: 100%;
+  position: relative;
+}
+
+.past-concerts-item img {
+  width: 100%;
+  max-width: 1010px;
+  max-height: 767.99px;
+}
+
+.past-concerts-item::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-secondary);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  max-width: 100%;
+  max-height: calc(100% - 1.3rem);
+  filter: contrast(2);
+}
+
+.after-text .past-concert-date,
+.past-concert-date-2 {
+  position: absolute;
+  color: var(--white-color);
+  top: calc(50% - 2rem);
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 2rem;
+}
+
+.after-text .past-concert-title,
+.past-concert-title-2 {
+  position: absolute;
+  color: var(--white-color);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.2rem;
+}
+
+#partners {
+  background-color: var(--color-primary);
+}
+
+#partners-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  padding: 2rem 2rem;
+}
+
+.partners-title {
+  position: relative;
+  color: var(--color-tertiary);
+}
+
+.partners-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(100% + .3rem);
+}
+
+.partners-info {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.partner-imgs {
+  display: grid;
+  gap: 1rem;
+  max-width: 100%;
+  position: relative;
+  grid-template-areas: 'partner1 partner1 partner2 partner2 partner3 partner3'
+  'partner4 partner4 partner4 partner5 partner5 partner5';
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.partner-img-1 img,
+.partner-img-2 img,
+.partner-img-3 img,
+.partner-img-4 img {
+  max-width: 80%;
+  filter:drop-shadow(0 0 0.1rem var(--white-color)) contrast(1.5) grayscale(1);
+}
+
+.partner-img-1 {
+    grid-area: partner1;
+}
+
+.partner-img-2 {
+  grid-area: partner2;
+}
+
+.partner-img-3 {
+  grid-area: partner3;
+}
+
+.partner-img-4 {
+  grid-area: partner4;
+}
+
+.partner-img-5 {
+  grid-area: partner5;
+}
+
+.partner-img-5 img {
+  max-width: 80%;
+  filter: drop-shadow(0px 5px 5px var(--color-primary)) contrast(1.5) grayscale(1);
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh
+}
+
+.logo-copy {
+  /* height: 100%; */
+}
+
+#footer img {
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.copyright-info {
+  width: 50%;
+}
+
+.show-deskt {
+  display: none;
+}
+
+#footer-index {
+  background-color: var(--white-color);
+  height: 10vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-height: 20vh
+}
+
+.mobile-menu {
+  width: 0%;
+  height: 100vh;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  width: 100%!important;
+}
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+  .deskt-hide {
+    display: none;
+  }
+
+  .mobile-hide{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+.mobile-hide a {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.mobile-hide a:hover {
+  color: var(--color-primary)
+}
+
+
+  .social-login {
+    width: 100%;
+    display: block;
+  }
+
+  .social-login-ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: var(--color-primary);
+    height: 2rem;
+    padding-right: 1rem;
+  }
+
+  .social-login-ul a {
+    color: var(--white-color);
+}
+
+  .logo-image {
+    margin-left: 10rem;
+    text-align: center;
+  }
+
+  .logo-image img {
+    object-fit: contain;
+  }
+
+  .ul-container {
+    width: 100%;
+  }
+
+  .nav-ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+    padding-right: 1rem;
+  }
+
+  #showcase {
+    min-height: calc(100vh - (10vh + 2rem));
+  }
+
+  #main-container {
+    max-width: 70%;
+    z-index: 1;
+  }
+
+  .presentation {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .head-description {
+    border: none;
+  }
+
+  .description {
+    max-width: 60%;
+    border: 5px solid var(--white-color);
+    padding: 0.5rem;
+  }
+
+  .information {
+    max-width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 900;
+    color: gray;
+  }
+
+  .date-text {
+    font-size: 2rem;
+  }
+
+  .grid-program {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 70%;
+    gap: 1rem;
+  }
+
+  .program-title {
+    margin-bottom: 1rem;
+  }
+
+  .program-item,
+  .program-item-text {
+    flex-direction: column;
+  }
+
+  .buy-tickets {
+    grid-column: 1 / span 5;
+    background-color: transparent;
+    max-width: 100%;
+    text-decoration: underline;
+    margin: 0;
+  }
+
+  .buy-tickets a:hover {
+    color: var(--color-secondary);
+  }
+
+  .about-title {
+    font-size: 5rem;
+  }
+
+  .about-presentation {
+    display: none;
+  }
+
+  .about-heading {
+    text-align: center;
+  }
+
+  .hr-about-deskt {
+    width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(100% + .3rem);
+  }
+
+  .about-head {
+    background-color: transparent;
+  }
+
+  .about-description {
+    background-color: rgb(255, 255, 255);
+    margin: 5rem auto;
+    border: 2px solid var(--color-tertiary);
+    padding: 2rem;
+    line-height: 1.7rem;
+  }
+
+  .show-deskt {
+    display: block;
+  }
+
+  .information {
+    text-align: center;
+  }
+
+  .logo-info {
+    max-width: 70%;
+    margin: 3rem auto;
+  }
+
+  .logo-about {
+    max-width: 700px;
+  }
+
+  .logo-about img {
+    height: 300px;
+  }
+
+  .past-concerts-container {
+    flex-direction: row;
+  }
+
+  .past-concerts-item img {
+    max-height: 400px;
+  }
+
+  #partners-about {
+    display: none;
+  }
+
+  .partners-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    padding: 2rem 2rem;
+  }
+
+  .partner-imgs-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partner-img-1,
+  .partner-img-2,
+  .partner-img-3,
+  .partner-img-4,
+  .partner-img-5 {
+    max-width: 20%;
+  }
+
+  .partner-imgs-index img {
+    max-width: 40%;
+  }
+
+  #footer {
+    background-color: var(--color-primary);
+    color: var(--white-color);
+    height: 10vh;
+  }
+
+  #footer-index {
+    background-color: var(--white-color);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 20vh
+  }
+
+  .logo-copy {
+    width: unset;
+    height: unset;
+    margin: 1rem;
+  }
+
+  .copyright-info {
+    width: auto;
+  }
+
+  #footer img {
+    width: unset;
+    height:unset;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
 }

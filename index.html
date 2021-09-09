@@ -6,44 +6,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
   <script src="https://kit.fontawesome.com/63ff2cfeab.js" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href="./images/./logo_size.jpg" type="image/x-icon">
   <title>Global Concert 2018</title>
 </head>
+
 <body>
   <header id="navbar">
+    <div class="mobile-menu"></div>
     <div id="menu" class="mobile deskt-hide">
-      <i class="fas fa-bars"></i>
+      <a href="#" class="hamburguer"><i class="fas fa-bars"></i></a>
     </div>
+    <div class="social-login">
+      <ul class="social-login-ul">
+        <li class="social-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="social-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="social-item"><a href="#">English</a></li>
+        <li class="social-item"><a href="#">My Page</a></li>
+        <li class="social-item"><a href="#">Logout</a></li>
+      </ul>
+    </div>
+    <nav class="deskt mobile-hide">
+      <div class="logo-image">
+        <a href="index.html"><img src="./images/logo.webp" alt="logo"></a>
+      </div>
+      <div class="ul-container">
+        <ul class="nav-ul">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="#">Tickets</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item"><a href="#">Sponsors</a></li>
+          <li class="nav-item"><a href="#">News</a></li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <section id="showcase">
     <!-- bg image here -->
-    <div class="heading">
-      <h4 class="presentation">
-        Hello! Be ready for what's next!
-      </h4>
-      <h1 class="title">
-        CREATIVE COMMONS
-        GLOBAL CONCERT 2018
-      </h1>
-    </div>
-    <div class="head-description">
-      <p class="description">
-        An international concert by the Creative Commons Global Network that will be held in Berlin, Germany, on the
-        first of April 2018. <br>
-        <span>More than 100 artists</span> will be performing in the concert, including musicians, composers and artists from around
-        the world.
-      </p>
-    </div>
-    <div class="information">
-      <p class="date-text">
-        2018-04-01 - 2018-04-10
-      </p>
-      <p class="location-text">
-        Olympic Stadium Berlin, Germany
-      </p>
+    <div id="main-container">
+      <div class="heading">
+        <h4 class="presentation">
+          Hello! Be ready for what's next!
+        </h4>
+        <h1 class="title">
+          CREATIVE COMMONS <br>
+          GLOBAL CONCERT <br> 2018
+        </h1>
+      </div>
+      <div class="head-description">
+        <p class="description">
+          An international concert by the Creative Commons Global Network that will be held in Berlin, Germany, on the
+          first of April 2018. <br>
+          <span>More than 100 artists</span> will be performing in the concert, including musicians, composers and
+          artists
+          from around
+          the world.
+        </p>
+      </div>
+      <div class="information">
+        <p class="date-text">
+          2018-04-01 - 2018-04-10
+        </p>
+        <p class="location-text">
+          Olympic Stadium Berlin, Germany
+        </p>
+      </div>
     </div>
   </section>
   <section id="program">
@@ -60,12 +91,12 @@
         </div>
         <div class="program-item-text">
           <h3 class="program-item-text-title">
-            <a href="https://www.creativecommons.org/global/2018/04/01/global-concert-2018-berlin-2018-04-01/">
+            <a href="#">
               Meet
             </a>
           </h3>
           <p class="program-item-text-description">
-            Come and meet  people from around the world that share your passion for music.
+            Come and meet people from around the world that share your passion for music.
           </p>
         </div>
       </div>
@@ -75,7 +106,7 @@
         </div>
         <div class="program-item-text">
           <h3 class="program-item-text-title">
-            <a href="https://www.creativecommons.org/global/2018/04/01/global-concert-2018-berlin-2018-04-01/">
+            <a href="#">
               Watch
             </a>
           </h3>
@@ -90,7 +121,7 @@
         </div>
         <div class="program-item-text">
           <h3 class="program-item-text-title">
-            <a href="https://www.creativecommons.org/global/2018/04/01/global-concert-2018-berlin-2018-04-01/">
+            <a href="#">
               Talk
             </a>
           </h3>
@@ -105,7 +136,7 @@
         </div>
         <div class="program-item-text">
           <h3 class="program-item-text-title">
-            <a href="https://www.creativecommons.org/global/2018/04/01/global-concert-2018-berlin-2018-04-01/">
+            <a href="#">
               Merch
             </a>
           </h3>
@@ -120,7 +151,7 @@
         </div>
         <div class="program-item-text">
           <h3 class="program-item-text-title">
-            <a href="https://www.creativecommons.org/global/2018/04/01/global-concert-2018-berlin-2018-04-01/">
+            <a href="#">
               Enjoy!
             </a>
           </h3>
@@ -136,6 +167,42 @@
       </button>
     </div>
   </section>
+  <section id="partners" class="partners-index">
+    <div class="partners-info">
+      <h3 class="partners-title">
+        Partners
+        <hr class="partners-hr">
+      </h3>
+    </div>
+    <div class="partner-imgs partner-imgs-index">
+      <div class="partner-img-1">
+        <img src="./images/kisspng-microphone-sennheiser-logo-audio-headphones-sennheiser-5b2cf07556b315.5190850915296717973551.png" alt="partner-1">
+      </div>
+      <div class="partner-img-2">
+        <img src="./images/pngegg (1).webp" alt="partner-2">
+      </div>
+      <div class="partner-img-3">
+        <img src="./images/pngegg.webp" alt="partner-3">
+      </div>
+      <div class="partner-img-4">
+        <img src="./images/pngwing.com.webp" alt="partner-4">
+      </div>
+      <div class="partner-img-5 diff">
+        <img src="./images/Spotify-logo.webp" alt="partner-5">
+      </div>
+    </div>
+  </section>
+  <footer id="footer-index" class="copyright">
+    <div class="logo-copy">
+      <img src="./images/logo.webp" alt="logo">
+    </div>
+    <div class="copyright-info">
+      <p class="copyright-text">
+        © 2019 Global Concert. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
 </body>
 
 </html>
