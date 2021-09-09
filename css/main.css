@@ -1,0 +1,950 @@
+:root {
+  --color-primary: #272a31;
+  --color-secondary: #ec5242;
+  --color-tertiary: #d3d3d3;
+  --white-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* .close {
+  transition: all 0.3s ease-in-out;
+  transform: rotate(90deg);
+} */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.mobile-hide {
+  display: none;
+  gap: 5rem;
+}
+
+.social-login {
+  display: none;
+}
+
+#menu {
+  position: relative;
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.fa-times {
+  font-size: 1.5rem;
+  z-index: 10;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: var(--white-color);
+}
+
+#showcase {
+  background: url('../jana-kunz-Ra3-o60F1rc-unsplash.webp') no-repeat center center;
+  background-size: cover;
+  padding: 3rem 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+#showcase::before {
+  content: '';
+  position: absolute;
+  background-color: var(--white-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+}
+
+#main-container {
+  z-index: 1;
+}
+
+.heading {
+  margin: 1rem 0;
+}
+
+.presentation {
+  color: var(--color-secondary);
+  font-size: 1.2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  background: url('../pexels-steve-johnson-1962555.webp') no-repeat center center;
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  filter: contrast(150%);
+  filter: saturate(120%);
+}
+
+.head-description {
+  font-size: 1.2rem;
+  z-index: 1;
+  padding: 0.7rem;
+  border: 1px solid var(--white-color);
+}
+
+.description span {
+  font-weight: 700;
+}
+
+.information {
+  z-index: 1;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+  margin-top: 0.7rem;
+  width: 100%;
+  color: gray;
+  border: none;
+  text-align: center;
+}
+
+.date-text {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.date-location {
+  font-size: 1.6rem;
+}
+
+#program {
+  background: var(--color-primary) repeating-linear-gradient(-45deg, #111 2px, #222 3px, #222 4px, #111 7px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.program-title {
+  color: var(--white-color);
+  font-size: 1.2rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.grid-program {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.program-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 0;
+  gap: 0.8rem;
+  padding: 1rem;
+  text-align: left;
+  position: relative;
+}
+
+.program-item::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-tertiary);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+.program-item-image,
+.program-item-text {
+  z-index: 1;
+}
+
+.program-item-text {
+  display: flex;
+  font-size: 0.8rem;
+  align-items: center;
+  color: var(--white-color);
+  gap: 2rem;
+}
+
+.program-item-text-description {
+  max-width: 70%;
+}
+
+.program-item-text a {
+  color: var(--color-secondary);
+}
+
+.fa-handshake,
+.fa-eye,
+.fa-comments,
+.fa-store,
+.fa-icons {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.buy-tickets {
+  background-color: var(--color-secondary);
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 80%;
+  justify-self: center;
+  color: var(--white-color);
+  font-weight: 700;
+}
+
+.index {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(100% + 0.3rem);
+}
+
+.about-presentation {
+  text-align: center;
+}
+
+.about-title {
+  background-color: var(--color-secondary);
+  background-image: unset;
+}
+
+.about-head {
+  padding: 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.about-description {
+  padding: 1rem;
+  border: 2px solid var(--color-tertiary);
+  text-align: center;
+}
+
+.information a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.legal-info {
+  position: relative;
+}
+
+#about-legal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid var(--color-tertiary);
+}
+
+.about-logo-legal {
+  margin-bottom: 1rem;
+}
+
+.about-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(0% + 2rem);
+}
+
+.logo-about {
+  max-width: 400px;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.logo-about img {
+  width: 100%;
+  border: 1px solid var(--color-tertiary);
+  height: 150px;
+  object-fit: cover;
+}
+
+#past-concerts {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 2rem;
+}
+
+.past-concerts-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(0% + 2rem);
+}
+
+.past-concert-description {
+  padding: 1rem;
+  text-align: center;
+}
+
+.past-concerts-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.past-concerts-info {
+  position: relative;
+}
+
+.past-concerts-item {
+  max-width: 100%;
+  position: relative;
+}
+
+.past-concerts-item img {
+  width: 100%;
+  max-width: 1010px;
+  max-height: 767.99px;
+}
+
+.past-concerts-item::before {
+  content: '';
+  position: absolute;
+  background-color: var(--color-secondary);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  max-width: 100%;
+  max-height: calc(100% - 1.3rem);
+  filter: contrast(2);
+}
+
+.after-text .past-concert-date,
+.past-concert-date-2 {
+  position: absolute;
+  color: var(--white-color);
+  top: calc(50% - 2rem);
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 2rem;
+}
+
+.after-text .past-concert-title,
+.past-concert-title-2 {
+  position: absolute;
+  color: var(--white-color);
+  top: 50%;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  font-size: 1.2rem;
+}
+
+#partners {
+  background-color: var(--color-primary);
+}
+
+#partners-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  padding: 2rem 2rem;
+}
+
+.partners-title {
+  color: var(--color-tertiary);
+}
+
+.partners-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(0% + 2rem);
+}
+
+.partners-info {
+  margin-bottom: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.partner-imgs {
+  display: grid;
+  gap: 1rem;
+  max-width: 100%;
+  position: relative;
+  grid-template-areas:
+    'partner1 partner1 partner2 partner2 partner3 partner3'
+    'partner4 partner4 partner4 partner5 partner5 partner5';
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.partner-img-1 img,
+.partner-img-2 img,
+.partner-img-3 img,
+.partner-img-4 img {
+  max-width: 80%;
+  filter: drop-shadow(0 0 0.1rem var(--white-color)) contrast(1.5) grayscale(1);
+}
+
+.partner-img-1 {
+  grid-area: partner1;
+}
+
+.partner-img-2 {
+  grid-area: partner2;
+}
+
+.partner-img-3 {
+  grid-area: partner3;
+}
+
+.partner-img-4 {
+  grid-area: partner4;
+}
+
+.partner-img-5 {
+  grid-area: partner5;
+}
+
+.partner-img-5 img {
+  max-width: 80%;
+  filter: drop-shadow(0 5px 5px var(--color-primary)) contrast(1.5) grayscale(1);
+}
+
+#footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 15vh;
+}
+
+#footer img {
+  max-width: 100%;
+  object-fit: contain;
+  max-height: 100%;
+}
+
+.copyright-info {
+  width: 50%;
+}
+
+.show-deskt {
+  display: none;
+}
+
+#footer-index {
+  background-color: var(--white-color);
+  height: 10vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  max-height: 20vh;
+}
+
+.mobile-menu {
+  width: 0%;
+  height: 100vh;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+
+.active {
+  width: 100% !important;
+  text-align: center;
+  height: 100%;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-height: 100vh;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+  height: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item a {
+  color: var(--white-color);
+}
+
+#featured-speakers {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.featured-title {
+  position: relative;
+}
+
+.speakers-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: calc(50% - 20px);
+}
+
+.featured-speakers {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0;
+  margin-left: 2rem;
+}
+
+.speaker-image {
+  max-width: 100px;
+  position: relative;
+}
+
+.image-speaker {
+  width: 100%;
+}
+
+.speaker-info {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.position {
+  color: var(--color-secondary);
+  font-style: italic;
+}
+
+.speaker-image::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40%;
+  height: 40%;
+  background: url('../cuadricula.png') no-repeat center center / cover;
+  z-index: -1;
+  filter: grayscale(1);
+}
+
+/* Desktop version */
+
+@media screen and (min-width: 768px) {
+  .deskt-hide {
+    display: none;
+  }
+
+  .social-login-ul a {
+    color: var(--white-color);
+  }
+
+  .mobile-hide {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-between;
+  }
+
+  .mobile-hide a {
+    color: var(--color-secondary);
+    font-weight: 700;
+  }
+
+  .mobile-hide a:hover {
+    color: var(--color-primary);
+  }
+
+  .social-login {
+    width: 100%;
+    display: block;
+  }
+
+  .social-login-ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    background-color: var(--color-primary);
+    height: 2rem;
+    padding-right: 1rem;
+  }
+
+  .logo-image {
+    margin-left: calc(20% - 5rem);
+    text-align: center;
+  }
+
+  .logo-image img {
+    object-fit: contain;
+  }
+
+  /* .ul-container {
+    width: 60%;
+  } */
+
+  .nav-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: calc(100% / 5 - 2rem);
+    padding-right: 1rem;
+  }
+
+  .nav-item {
+    font-size: 1.3rem;
+    max-width: 60%;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  #showcase {
+    min-height: calc(100vh - (10vh + 2rem));
+  }
+
+  #main-container {
+    max-width: 70%;
+    z-index: 1;
+  }
+
+  .presentation {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .head-description {
+    border: none;
+  }
+
+  .description {
+    max-width: 60%;
+    border: 5px solid var(--white-color);
+    padding: 0.5rem;
+  }
+
+  .information {
+    max-width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    color: gray;
+  }
+
+  .location-text {
+    font-weight: 400;
+  }
+
+  .information-about {
+    text-align: center;
+  }
+
+  .date-text {
+    font-size: 2rem;
+  }
+
+  .grid-program {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 70%;
+    gap: 1rem;
+  }
+
+  .program-title {
+    margin-bottom: 1rem;
+  }
+
+  .program-item,
+  .program-item-text {
+    flex-direction: column;
+  }
+
+  .buy-tickets {
+    grid-column: 1 / span 5;
+    background-color: transparent;
+    max-width: 100%;
+    text-decoration: underline;
+    margin: 0;
+    color: var(--color-secondary);
+  }
+
+  .buy-tickets:hover {
+    color: var(--white-color);
+  }
+
+  #featured-speakers {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .featured-title {
+    position: relative;
+    margin-bottom: 4rem;
+  }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    gap: 3rem;
+  }
+
+  .speakers-hr {
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    left: calc(50% - 20px);
+  }
+
+  .speaker {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .speaker-image {
+    max-width: 100px;
+    position: relative;
+  }
+
+  .speaker-image img {
+    max-width: 100%;
+  }
+
+  .speaker-image::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    width: 40%;
+    height: 40%;
+    background: url('../cuadricula.png') no-repeat center center / cover;
+    z-index: -1;
+    filter: grayscale(1);
+  }
+
+  .position {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    font-style: italic;
+  }
+
+  .position-hr {
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-tertiary);
+    position: absolute;
+    top: calc(0% + 3rem);
+    left: 0;
+  }
+
+  .speaker-info {
+    text-align: left;
+    position: relative;
+  }
+
+  .speaker-description {
+    margin-top: 1rem;
+  }
+
+  .about-title {
+    font-size: 5rem;
+  }
+
+  .about-presentation {
+    display: none;
+  }
+
+  .about-heading {
+    text-align: center;
+    position: relative;
+  }
+
+  .hr-about-deskt {
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(100% + 0.3rem);
+  }
+
+  .about-head {
+    background-color: transparent;
+  }
+
+  .about-description {
+    background-color: rgb(255, 255, 255);
+    margin: 5rem auto;
+    border: 2px solid var(--color-tertiary);
+    padding: 2rem;
+    line-height: 1.7rem;
+  }
+
+  .show-deskt {
+    display: block;
+  }
+
+  .logo-info {
+    max-width: 70%;
+    margin: 3rem auto;
+  }
+
+  .logo-about {
+    max-width: 700px;
+  }
+
+  .logo-about img {
+    height: 300px;
+  }
+
+  .past-concerts-container {
+    flex-direction: row;
+  }
+
+  .past-concerts-item img {
+    max-height: 400px;
+  }
+
+  #partners-about {
+    display: none;
+  }
+
+  .partners-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+  }
+
+  .partner-imgs-index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .partner-img-1,
+  .partner-img-2,
+  .partner-img-3,
+  .partner-img-4,
+  .partner-img-5 {
+    max-width: 20%;
+  }
+
+  .partner-imgs-index img {
+    max-width: 40%;
+  }
+
+  #footer {
+    background-color: var(--color-primary);
+    color: var(--white-color);
+    height: 20vh;
+  }
+
+  #footer-index {
+    background-color: var(--white-color);
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 20vh;
+  }
+
+  .logo-copy {
+    width: unset;
+    height: unset;
+    margin: 1rem;
+  }
+
+  .copyright-info {
+    width: auto;
+  }
+
+  #footer img {
+    width: unset;
+    height: unset;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+}
