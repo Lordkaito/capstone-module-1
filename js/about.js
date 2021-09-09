@@ -2,7 +2,7 @@ const menuAbout = document.querySelector('.mobile-menu');
 const hamburgerAbout = document.querySelector('.fa-bars');
 const bodyAbout = document.querySelector('body');
 
-hamburgerAbout.addEventListener('click', (e) => {
+hamburgerAbout.addEventListener('click', () => {
   menuAbout.classList.toggle('active');
   if (menuAbout.classList.contains('active')) {
     hamburgerAbout.classList.remove('fa-bars');
@@ -25,7 +25,7 @@ hamburgerAbout.addEventListener('click', (e) => {
     setTimeout(() => {
       hamburgerAbout.classList.remove('fa-times');
       hamburgerAbout.classList.add('fa-bars');
-      hamburgerAbout.style = 'transform: rotate(0deg); transition: all 0.3s ease-in-out'
+      hamburgerAbout.style = 'transform: rotate(0deg); transition: all 0.3s ease-in-out';
       hamburgerAbout.classList.remove('close');
       bodyAbout.classList.remove('no-scroll');
     }, 300);

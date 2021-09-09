@@ -40,16 +40,28 @@ const speakers = [
     job: 'General Artist Manager',
     description: 'Hannah works directly with the artist to make sure they have all they need.',
     image: '../images/pexels-thisisengineering-3861962.webp',
-  }
+  },
 ];
 
 window.onload = () => {
-  const { name, job, description, image } = speakers[0];
-  const { name: name2, job: job2, description: description2, image: image2 } = speakers[1];
-  const { name: name3, job: job3, description: description3, image: image3 } = speakers[2];
-  const { name: name4, job: job4, description: description4, image: image4 } = speakers[3];
-  const { name: name5, job: job5, description: description5, image: image5 } = speakers[4];
-  const { name: name6, job: job6, description: description6, image: image6 } = speakers[5];
+  const {
+    name, job, description, image,
+  } = speakers[0];
+  const {
+    name: name2, job: job2, description: description2, image: image2,
+  } = speakers[1];
+  const {
+    name: name3, job: job3, description: description3, image: image3,
+  } = speakers[2];
+  const {
+    name: name4, job: job4, description: description4, image: image4,
+  } = speakers[3];
+  const {
+    name: name5, job: job5, description: description5, image: image5,
+  } = speakers[4];
+  const {
+    name: name6, job: job6, description: description6, image: image6,
+  } = speakers[5];
 
   featuredSpeakers.innerHTML = `
   <div class="featured-title">
@@ -126,9 +138,9 @@ window.onload = () => {
   </div>
   `;
   featuredSpeakers.classList.remove('d-none');
-}
+};
 
-hamburger.addEventListener('click', (e) => {
+hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
   if (menu.classList.contains('active')) {
     hamburger.classList.remove('fa-bars');
@@ -151,11 +163,9 @@ hamburger.addEventListener('click', (e) => {
     setTimeout(() => {
       hamburger.classList.remove('fa-times');
       hamburger.classList.add('fa-bars');
-      hamburger.style = 'transform: rotate(0deg); transition: all 0.3s ease-in-out'
+      hamburger.style = 'transform: rotate(0deg); transition: all 0.3s ease-in-out';
       hamburger.classList.remove('close');
       body.classList.remove('no-scroll');
     }, 300);
   }
 });
-
-
