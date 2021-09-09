@@ -2,7 +2,7 @@ const menu = document.querySelector('.mobile-menu');
 const hamburger = document.querySelector('.fa-bars');
 const body = document.querySelector('body');
 
-hamburger.addEventListener('click', (e) => {
+hamburger.addEventListener('click', () => {
   menu.classList.toggle('active');
   if (menu.classList.contains('active')) {
     hamburger.classList.remove('fa-bars');

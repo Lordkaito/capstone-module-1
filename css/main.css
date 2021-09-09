@@ -64,10 +64,6 @@ li {
   color: var(--white-color);
 }
 
-.nav-items {
-  
-}
-
 #showcase {
   background: url('../images/jana-kunz-Ra3-o60F1rc-unsplash.webp') no-repeat center center;
   background-size: cover;
@@ -87,7 +83,7 @@ li {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 #main-container {
@@ -110,9 +106,7 @@ li {
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
   filter: contrast(150%);
-  filter:saturate(120%);
 }
 
 .head-description {
@@ -130,10 +124,11 @@ li {
   z-index: 1;
   font-size: 1.2rem;
   padding: 0.7rem;
-  border: 1px solid var(--white-color);
-  margin-top: .7rem;
+  margin-top: 0.7rem;
   width: 100%;
   color: gray;
+  border: none;
+  text-align: center;
 }
 
 .date-text {
@@ -146,8 +141,7 @@ li {
 }
 
 #program {
-  background-color: var(--color-primary);
-  background: repeating-linear-gradient( -45deg, #111 2px, #222 3px, #222 4px, #111 7px);
+  background: var(--color-primary) repeating-linear-gradient(-45deg, #111 2px, #222 3px, #222 4px, #111 7px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,7 +152,7 @@ li {
   color: var(--white-color);
   font-size: 1.2rem;
   position: relative;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .grid-program {
@@ -169,13 +163,9 @@ li {
 .program-item {
   display: flex;
   align-items: center;
-  margin: .5rem 0;
-  gap: .8rem;
+  margin: 0.5rem 0;
+  gap: 0.8rem;
   padding: 1rem;
-  text-align: center;
-}
-
-.program-item {
   text-align: left;
   position: relative;
 }
@@ -198,7 +188,7 @@ li {
 
 .program-item-text {
   display: flex;
-  font-size: .8rem;
+  font-size: 0.8rem;
   align-items: center;
   color: var(--white-color);
   gap: 2rem;
@@ -229,9 +219,6 @@ li {
   text-align: center;
   max-width: 80%;
   justify-self: center;
-}
-
-.buy-tickets a {
   color: var(--white-color);
   font-weight: 700;
 }
@@ -242,7 +229,7 @@ li {
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + .3rem);
+  top: calc(100% + 0.3rem);
 }
 
 .about-presentation {
@@ -265,15 +252,9 @@ li {
   text-align: center;
 }
 
-.information {
-  border: none;
-  font-size: 1rem;
-  text-align: center;
-}
-
 .information a {
   color: var(--color-primary);
-  text-decoration:underline;
+  text-decoration: underline;
   font-weight: 700;
 }
 
@@ -287,6 +268,10 @@ li {
   border-bottom: 1px solid var(--color-tertiary);
 }
 
+.legal-info {
+  position: relative;
+}
+
 .about-logo-legal {
   position: relative;
   margin-bottom: 1rem;
@@ -298,7 +283,7 @@ li {
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + .3rem);
+  top: calc(0% + 2rem);
 }
 
 .logo-about {
@@ -323,7 +308,7 @@ li {
   padding: 2rem 2rem;
 }
 
-.past-concert-title {
+.past-concert-info {
   position: relative;
 }
 
@@ -333,7 +318,7 @@ li {
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + .3rem);
+  top: calc(0% + 2rem);
 }
 
 .past-concert-description {
@@ -409,8 +394,13 @@ li {
   padding: 2rem 2rem;
 }
 
-.partners-title {
+.partners-info {
   position: relative;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.partners-title {
   color: var(--color-tertiary);
 }
 
@@ -420,12 +410,7 @@ li {
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + .3rem);
-}
-
-.partners-info {
-  margin-bottom: 1rem;
-  text-align: center;
+  top: calc(0% + 2rem);
 }
 
 .partner-imgs {
@@ -433,10 +418,9 @@ li {
   gap: 1rem;
   max-width: 100%;
   position: relative;
-  grid-template-areas: 'partner1 partner1 partner2 partner2 partner3 partner3'
-  'partner4 partner4 partner4 partner5 partner5 partner5';
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-areas:
+    'partner1 partner1 partner2 partner2 partner3 partner3'
+    'partner4 partner4 partner4 partner5 partner5 partner5';
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -447,11 +431,11 @@ li {
 .partner-img-3 img,
 .partner-img-4 img {
   max-width: 80%;
-  filter:drop-shadow(0 0 0.1rem var(--white-color)) contrast(1.5) grayscale(1);
+  filter: drop-shadow(0 0 0.1rem var(--white-color)) contrast(1.5) grayscale(1);
 }
 
 .partner-img-1 {
-    grid-area: partner1;
+  grid-area: partner1;
 }
 
 .partner-img-2 {
@@ -472,14 +456,14 @@ li {
 
 .partner-img-5 img {
   max-width: 80%;
-  filter: drop-shadow(0px 5px 5px var(--color-primary)) contrast(1.5) grayscale(1);
+  filter: drop-shadow(0 5px 5px var(--color-primary)) contrast(1.5) grayscale(1);
 }
 
 #footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 15vh
+  height: 15vh;
 }
 
 .logo-copy {
@@ -506,7 +490,7 @@ li {
   display: none;
   align-items: center;
   justify-content: center;
-  max-height: 20vh
+  max-height: 20vh;
 }
 
 .mobile-menu {
@@ -521,8 +505,9 @@ li {
 }
 
 .active {
-  width: 100%!important;
+  width: 100% !important;
 }
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
@@ -530,21 +515,24 @@ li {
     display: none;
   }
 
-  .mobile-hide{
+  .social-login-ul a {
+    color: var(--white-color);
+  }
+
+  .mobile-hide {
     display: flex;
     align-items: center;
     height: 10vh;
-}
+  }
 
-.mobile-hide a {
-  color: var(--color-secondary);
-  font-weight: 700;
-}
+  .mobile-hide a {
+    color: var(--color-secondary);
+    font-weight: 700;
+  }
 
-.mobile-hide a:hover {
-  color: var(--color-primary)
-}
-
+  .mobile-hide a:hover {
+    color: var(--color-primary);
+  }
 
   .social-login {
     width: 100%;
@@ -560,10 +548,6 @@ li {
     height: 2rem;
     padding-right: 1rem;
   }
-
-  .social-login-ul a {
-    color: var(--white-color);
-}
 
   .logo-image {
     margin-left: 10rem;
@@ -647,8 +631,9 @@ li {
     margin: 0;
   }
 
-  .buy-tickets a:hover {
+  .buy-tickets:hover {
     color: var(--color-secondary);
+    cursor: pointer;
   }
 
   .about-title {
@@ -665,11 +650,10 @@ li {
 
   .hr-about-deskt {
     width: 40px;
-  height: 2px;
-  background-color: var(--color-secondary);
-  position: absolute;
-  left: calc(50% - 20px);
-  top: calc(100% + .3rem);
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: calc(50% - 20px);
   }
 
   .about-head {
@@ -688,10 +672,6 @@ li {
     display: block;
   }
 
-  .information {
-    text-align: center;
-  }
-
   .logo-info {
     max-width: 70%;
     margin: 3rem auto;
@@ -703,6 +683,10 @@ li {
 
   .logo-about img {
     height: 300px;
+  }
+
+  .past-concerts-info {
+    position: relative;
   }
 
   .past-concerts-container {
@@ -756,7 +740,7 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-height: 20vh
+    max-height: 20vh;
   }
 
   .logo-copy {
@@ -771,7 +755,7 @@ li {
 
   #footer img {
     width: unset;
-    height:unset;
+    height: unset;
   }
 
   .mobile-menu {
