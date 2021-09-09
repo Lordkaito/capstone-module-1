@@ -34,7 +34,7 @@ It has its own logo, content, styles and pictures.
 
 ## Live Demo
 
-[Live Demo](https://lordkaito.github.io/capstone-module-1/)
+[Live Demo](https://jovial-visvesvaraya-e010cc.netlify.app/)
 
 
 ### Prerequisites

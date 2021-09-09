@@ -71,7 +71,7 @@ window.onload = () => {
   <div class="featured-speakers">
     <div class="speaker">
       <div class="speaker-image">
-        <img class="image-speaker" src='${image}'></img>
+        <img class="image-speaker" src='${image}' alt="speaker1"></img>
       </div>
       <div class="speaker-info">
         <h2>${name}</h2>
@@ -82,7 +82,7 @@ window.onload = () => {
     </div>
     <div class="speaker">
       <div class="speaker-image">
-        <img class="image-speaker" src='${image2}'></img>
+        <img class="image-speaker" src='${image2}' alt="speaker2"></img>
       </div>
       <div class="speaker-info">
         <h2>${name2}</h2>
@@ -93,7 +93,7 @@ window.onload = () => {
     </div>
     <div class="speaker">
       <div class="speaker-image">
-        <img class="image-speaker" src='${image3}'></img>
+        <img class="image-speaker" src='${image3}' alt="speaker3"></img>
       </div>
       <div class="speaker-info">
         <h2>${name3}</h2>
@@ -104,7 +104,7 @@ window.onload = () => {
     </div>
     <div class="speaker">
       <div class="speaker-image">
-        <img class="image-speaker" src='${image4}'></img>
+        <img class="image-speaker" src='${image4}' alt="speaker4"></img>
       </div>
       <div class="speaker-info">
         <h2>${name4}</h2>
@@ -115,7 +115,7 @@ window.onload = () => {
     </div>
     <div class="speaker">
       <div class="speaker-image">
-        <img class="image-speaker" src='${image5}'></img>
+        <img class="image-speaker" src='${image5}' alt="speaker5"></img>
       </div>
       <div class="speaker-info">
         <h2>${name5}</h2>
@@ -126,7 +126,7 @@ window.onload = () => {
     </div>
     <div class="speaker">
       <div class="speaker-image">
-        <img class="image-speaker" src='${image6}'></img>
+        <img class="image-speaker" src='${image6}' alt="speaker6"></img>
       </div>
       <div class="speaker-info">
         <h2>${name6}</h2>
