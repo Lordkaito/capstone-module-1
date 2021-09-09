@@ -35,8 +35,13 @@ li {
   list-style: none;
 }
 
+.d-none {
+  display: none;
+}
+
 .mobile-hide {
   display: none;
+  gap: 5rem;
 }
 
 .social-login {
@@ -482,10 +487,6 @@ li {
   height: 15vh
 }
 
-.logo-copy {
-  /* height: 100%; */
-}
-
 #footer img {
   max-width: 100%;
   object-fit: contain;
@@ -522,7 +523,99 @@ li {
 
 .active {
   width: 100%!important;
+  text-align: center;
+  height: 100%;
 }
+
+.nav-ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-height: 100vh;
+  height: 100%;
+}
+
+.nav-item {
+  width: 100%;
+  height: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item a {
+  color: var(--white-color);
+}
+
+#featured-speakers {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.featured-title {
+  position: relative;
+}
+
+.speakers-hr {
+  width: 40px;
+  height: 2px;
+  background-color: var(--color-secondary);
+  position: absolute;
+  top: calc(100% + 0.6rem);
+  left: calc(50% - 20px);
+}
+
+.featured-speakers {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  gap: 2rem;
+}
+
+.speaker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.speaker-image {
+  max-width: 100px;
+  position: relative;
+}
+
+.image-speaker {
+  width: 100%;
+}
+
+.speaker-info {
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.position {
+  color: var(--color-secondary);
+  font-style: italic;
+}
+
+.speaker-image::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 40%;
+  height: 40%;
+  background: url('../images/cuadricula.png') no-repeat center center / cover;
+  z-index: -1;
+  filter: grayscale(1);
+}
+
 /* Desktop version */
 
 @media screen and (min-width: 768px) {
@@ -534,6 +627,7 @@ li {
     display: flex;
     align-items: center;
     height: 10vh;
+    justify-content: space-between;
 }
 
 .mobile-hide a {
@@ -575,14 +669,23 @@ li {
   }
 
   .ul-container {
-    width: 100%;
+    width: 60%;
   }
 
   .nav-ul {
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     gap: 5rem;
     padding-right: 1rem;
+  }
+
+  .nav-item {
+    font-size: 1.3rem;
+    max-width: 60%;
+    width: 100%;
+    justify-content: flex-end;
+    width: auto;
   }
 
   #showcase {
@@ -651,6 +754,85 @@ li {
     color: var(--color-secondary);
   }
 
+  #featured-speakers {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  .featured-title {
+    position: relative;
+  }
+
+  .featured-speakers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 10rem;
+    gap: 3rem;
+  }
+
+  .speakers-hr {
+    width: 40px;
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    top: calc(100% + 0.6rem);
+    left: calc(50% - 20px);
+  }
+
+  .speaker {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .speaker-image {
+    max-width: 150px;
+    position: relative;
+  }
+
+  .speaker-image img {
+    max-width: 100%;
+  }
+
+  .speaker-image::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    width: 40%;
+    height: 40%;
+    background: url('../images/cuadricula.png') no-repeat center center / cover;
+    z-index: -1;
+    filter: grayscale(1);
+  }
+
+  .position {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    font-style: italic;
+  }
+
+  .position-hr {
+    width: 20px;
+    height: 2px;
+    background-color: var(--color-tertiary);
+    position: absolute;
+    top: calc(0% + 3.5rem);
+    left: 0;
+  }
+  .speaker-info{
+    text-align: left;
+    position: relative;
+  }
+
+  .speaker-description {
+    margin-top: 1rem;
+  }
+
   .about-title {
     font-size: 5rem;
   }
@@ -665,11 +847,11 @@ li {
 
   .hr-about-deskt {
     width: 40px;
-  height: 2px;
-  background-color: var(--color-secondary);
-  position: absolute;
-  left: calc(50% - 20px);
-  top: calc(100% + .3rem);
+    height: 2px;
+    background-color: var(--color-secondary);
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(100% + .3rem);
   }
 
   .about-head {
@@ -747,7 +929,7 @@ li {
   #footer {
     background-color: var(--color-primary);
     color: var(--white-color);
-    height: 10vh;
+    height: 20vh;
   }
 
   #footer-index {
