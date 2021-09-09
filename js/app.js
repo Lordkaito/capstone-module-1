@@ -9,37 +9,37 @@ const speakers = [
     name: 'Asha McMillan',
     job: 'Founder & CEO',
     description: 'Asha McMillan is the Founder and CEO of the company.',
-    image: '/images/business-people-at-the-office.webp',
+    image: './business-people-at-the-office.webp',
   },
   {
     name: 'Kameron Coleman',
     job: 'Event Manager',
     description: 'Kameron is the Event Manager of the compay.',
-    image: '/images/pexels-icsa-1709001.webp',
+    image: './pexels-icsa-1709001.webp',
   },
   {
     name: 'Alima Pate',
     job: 'Marketing Manager',
     description: 'Alima is the Marketing Manager of the company.',
-    image: '/images/businesswoman-posing-at-the-office.webp',
+    image: './businesswoman-posing-at-the-office.webp',
   },
   {
     name: 'Katy Mustafa',
     job: 'Art Design Manager',
     description: 'Katy is responsible for all the images, logos and colors of the company.',
-    image: '/images/pexels-andrea-piacquadio-3756679.webp',
+    image: './pexels-andrea-piacquadio-3756679.webp',
   },
   {
     name: 'Nicholas Boyer',
     job: 'Web Developer',
     description: 'Nicholas is the Web Developer of the company.',
-    image: '/images/pexels-mikhail-nilov-7989081.webp',
+    image: './pexels-mikhail-nilov-7989081.webp',
   },
   {
     name: 'Hannah Finley',
     job: 'General Artist Manager',
     description: 'Hannah works directly with the artist to make sure they have all they need.',
-    image: '/images/pexels-thisisengineering-3861962.webp',
+    image: './pexels-thisisengineering-3861962.webp',
   },
 ];
 

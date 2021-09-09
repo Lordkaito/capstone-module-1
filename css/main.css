@@ -70,7 +70,7 @@ li {
 }
 
 #showcase {
-  background: url('../images/jana-kunz-Ra3-o60F1rc-unsplash.webp') no-repeat center center;
+  background: url('../jana-kunz-Ra3-o60F1rc-unsplash.webp') no-repeat center center;
   background-size: cover;
   padding: 3rem 1rem;
   height: 100%;
@@ -107,7 +107,7 @@ li {
 .title {
   font-size: 2rem;
   font-weight: 900;
-  background: url('../images/pexels-steve-johnson-1962555.webp') no-repeat center center;
+  background: url('../pexels-steve-johnson-1962555.webp') no-repeat center center;
   background-size: cover;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
