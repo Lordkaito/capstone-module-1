@@ -225,9 +225,6 @@ li {
   text-align: center;
   max-width: 80%;
   justify-self: center;
-}
-
-.buy-tickets a {
   color: var(--white-color);
   font-weight: 700;
 }
@@ -267,6 +264,10 @@ li {
   font-weight: 700;
 }
 
+.legal-info {
+  position: relative;
+}
+
 #about-legal {
   display: flex;
   flex-direction: column;
@@ -278,7 +279,6 @@ li {
 }
 
 .about-logo-legal {
-  position: relative;
   margin-bottom: 1rem;
 }
 
@@ -288,7 +288,7 @@ li {
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + 0.3rem);
+  top: calc(0% + 2rem);
 }
 
 .logo-about {
@@ -313,17 +313,13 @@ li {
   padding: 2rem 2rem;
 }
 
-.past-concert-title {
-  position: relative;
-}
-
 .past-concerts-hr {
   width: 40px;
   height: 2px;
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + 0.3rem);
+  top: calc(0% + 2rem);
 }
 
 .past-concert-description {
@@ -337,6 +333,10 @@ li {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+
+.past-concerts-info {
+  position: relative;
 }
 
 .past-concerts-item {
@@ -400,7 +400,6 @@ li {
 }
 
 .partners-title {
-  position: relative;
   color: var(--color-tertiary);
 }
 
@@ -410,12 +409,13 @@ li {
   background-color: var(--color-secondary);
   position: absolute;
   left: calc(50% - 20px);
-  top: calc(100% + 0.3rem);
+  top: calc(0% + 2rem);
 }
 
 .partners-info {
   margin-bottom: 1rem;
   text-align: center;
+  position: relative;
 }
 
 .partner-imgs {
@@ -705,6 +705,10 @@ li {
     color: gray;
   }
 
+  .information-about {
+    text-align: center;
+  }
+
   .date-text {
     font-size: 2rem;
   }
@@ -730,10 +734,11 @@ li {
     max-width: 100%;
     text-decoration: underline;
     margin: 0;
+    color: var(--color-secondary);
   }
 
-  .buy-tickets a:hover {
-    color: var(--color-secondary);
+  .buy-tickets:hover {
+    color: var(--white-color);
   }
 
   #featured-speakers {
