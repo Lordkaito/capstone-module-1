@@ -750,6 +750,7 @@ li {
 
   .featured-title {
     position: relative;
+    margin-bottom: 4rem;
   }
 
   .featured-speakers {
@@ -891,7 +892,7 @@ li {
     align-items: center;
     justify-content: center;
     background-color: var(--color-primary);
-    padding: 2rem 2rem;
+    padding: 1rem 2rem;
   }
 
   .partner-imgs-index {
